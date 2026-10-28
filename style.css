@@ -1,0 +1,102 @@
+body{
+    background-image: url('arkaPlan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.window{
+    background-color: rgba(255, 105, 180, 0.4);
+    border: 3px solid #ff1493;
+    box-shadow: 8px 8px 0px rgba(255, 161, 216, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.mainWindow{
+    width: 450px;
+    height: 500px;
+}
+
+.titleBar{
+    background-color: #ff1493;
+    color: white;
+    padding: 5px 10px;
+    font-family: 'Courier New', Courier,monospace;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(251, 152, 203);
+}
+
+.sarkiOyun{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+}
+
+.kutular{
+    width: 350px;
+    flex: 1;
+}
+
+.carkAlani{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.carkDaire{
+    width: 250px;
+    height: 250px;
+    border: 4px dashed #ff1493;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+.y2kButon{
+    background-color: #ff1493;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 3px solid white;
+    cursor: pointer;
+    box-shadow: 6px 6px 0px rgba(255, 161, 216, 0.8);
+    transition: all 0.1s;
+}
+
+.y2kButon:hover{
+    background-color: white;
+    color: #ff1493;
+    border: 3px solid #ff1493;
+}
+
+.y2kButon:active{
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0px rgba(255, 161, 216, 0.8);
+}
+
+.window{
+    transition: transform 0.2s ease-in-out;
+}
+
+.window:hover{
+    transform: scale(1.02);
+}
