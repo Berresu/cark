@@ -9,7 +9,14 @@
 <body>
     <div class="container">
         <div class="window mainWindow">
-            <div class="titleBar">Windows Media Player</div>
+            <div class="titleBar">
+                <span>Windows Media Player</span>
+                <div class="windowsKontrol">
+                    <button class="butonKontrol kucult">_</button>
+                    <button class="butonKontrol buyut">□</button>
+                    <button class="butonKontrol kapat">X</button>
+                </div>
+            </div>
             <div class="icerik carkAlani">
                 <div class="carkDaire">
                     ?
@@ -22,7 +29,63 @@
         <div class="sarkiOyun">
             <div class="window kutular">
                 <div class="titleBar">Song</div>
-                <div class="icerik">Şarkı detayları</div>
+                <div class="icerik muzik">
+                    <div class="playerUst">
+                        <div class="albumCerceve">
+                            <img src="arianaPositions.png" alt="albüm" class="albumResim">
+                        </div>
+
+                        <div class="oynatmaKontrol">
+                            <div class="ustButonlar">
+                                <button class="medyaBtn cdBtn">◎</button>
+                                <div class="artiEksi">
+                                    <button class="medyaBtn kucukBtn">+</button>
+                                    <button class="medyaBtn kucukBtn">-</button>
+                                </div>
+                            </div>
+
+                            <div class="butonGrup">
+                                <button class="medyaBtn">►</button>
+                                <button class="medyaBtn">||</button>
+                                <button class="medyaBtn">⇆</button>
+                                <button class="medyaBtn">↻</button>
+                            </div>
+
+                            <div class="butonGrup">
+                                <button class="medyaBtn kucukBtn">⏮</button>
+                                <button class="medyaBtn kucukBtn">◄◄</button>
+                                <button class="medyaBtn kucukBtn">►►</button>
+                                <button class="medyaBtn kucukBtn">⏭</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="playerAlt">
+                        <div class="bilgiSatiri">
+                            <span class="etiket">Artist:</span>
+                            <div class="bilgiKutusu dropdown">
+                                <span>Ariana Grande</span>
+                                <span class="ok">▼</span>
+                            </div>
+                        </div>
+
+                        <div class="bilgiSatiri">
+                            <span class="etiket">Title:</span>
+                            <div class="bilgiKutusu dropdown">
+                                <span>Positions</span>
+                                <span class="ok">▼</span>
+                            </div>
+                        </div>
+
+                        <div class="ilerlemeSatiri">
+                            <span>1:33</span>
+                            <div class="ilerlemeCubugu">
+                                <div class="ilerlemeDolu"></div>
+                            </div>
+                            <span>2:52</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="window kutular">
