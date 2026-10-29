@@ -16,7 +16,7 @@ body{
 }
 
 .window{
-    background-color: rgba(255, 105, 180, 0.4);
+    background-color: #ff85c2;
     border: 3px solid #ff1493;
     box-shadow: 8px 8px 0px rgba(255, 161, 216, 0.8);
     display: flex;
@@ -35,6 +35,9 @@ body{
     font-family: 'Courier New', Courier,monospace;
     font-weight: bold;
     border-bottom: 3px solid rgb(251, 152, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sarkiOyun{
@@ -99,4 +102,181 @@ body{
 
 .window:hover{
     transform: scale(1.02);
+}
+
+.windowsKontrol{
+    display: flex;
+    gap: 4px;
+}
+
+.butonKontrol{
+    background-color: #ffb6c1;
+    border: 2px outset #ff69b4;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 14px;
+}
+
+.butonKontrol:active{
+    border: 2px inset #ff69b4;
+    background-color: #ff69b4;
+}
+
+.butonKontrol.kapat:hover{
+    background-color: #ff0000;
+    color: white;
+}
+
+.muzik{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+}
+
+.playerUst{
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.albumCerceve{
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+    border: 3px inset #ff1493;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.albumResim{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.oynatmaKontrol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.ustButonlar{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.artiEksi{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.butonGrup{
+    display: flex;
+    gap: 4px;
+}
+
+.medyaBtn{
+    background-color: #ffb6c1;
+    border: 2px outset #ff1493;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medyaBtn:active{
+    border: 2px inset #ff1493;
+    background-color: #ff69b4;
+}
+
+.medyaBtn{
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+}
+
+.kucukBtn{
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+}
+
+.cdBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.playerAlt{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.bilgiSatiri{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.etiket{
+    width: 60px;
+    font-size: 14px;
+    color: white;
+}
+
+.bilgiKutusu.dropdown{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #ffb6c1;
+    border: 2px inset #ff1493;
+    padding: 4px 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.ok{
+    font-size: 10px;
+}
+
+.ilerlemeSatiri{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+}
+
+.ilerlemeCubugu{
+    flex-grow: 1;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px inset #ff1493;
+}
+
+.ilerlemeDolu{
+    width: 45%;
+    height: 100%;
+    background-color: #ffb6c1;
+    border-right: 2px solid white;
 }
